@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luiz Miguel - Engenheiro de Software na Betha Sistemas. Portfolio profissional com projetos, habilidades e experiência.">
-    <meta name="keywords" content="Engenheiro de Software, Desenvolvedor, JavaScript, Java, C#, Criciúma">
+    <meta name="description" content="Luiz Miguel - Engenheiro de Software na Betha Sistemas. Portfolio profissional com projetos, habilidades e experiencia.">
+    <meta name="keywords" content="Engenheiro de Software, Desenvolvedor, JavaScript, Java, C#, Criciuma">
     <meta name="author" content="Luiz Miguel">
     <link rel="icon" type="image/png" href="./assets/github.png">
     <title>Luiz Miguel | Engenheiro de Software</title>
@@ -13,39 +13,252 @@
 </head>
 <body>
     <header class="cabecalho">
+        <a href="#home" class="cabecalho__logo">LM</a>
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="#home">Home</a>
+            <a class="cabecalho__menu__link" href="#sobre">Sobre</a>
+            <a class="cabecalho__menu__link" href="#habilidades">Habilidades</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+            <a class="cabecalho__menu__link" href="#contato">Contato</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">
-                Olá, eu sou <strong class="titulo-destaque">Luiz Miguel</strong>
-            </h1>
-            <p class="apresentacao__conteudo__texto">
-                Engenheiro de Software na <strong>Betha Sistemas</strong>, estudante de Engenharia de Software na SATC. 
-                Apaixonado por tecnologia e desenvolvimento de software, buscando sempre aprender e evoluir na área.
-            </p>
-            <p class="apresentacao__conteudo__texto apresentacao__conteudo__texto--destaque">
-                Criciúma, Santa Catarina - Brasil
-            </p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Minhas Redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://github.com/Miguelito001" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/github.png" alt="Ícone do GitHub">
-                    GitHub
-                </a>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/miguelito001/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/linkedin.png" alt="Ícone do LinkedIn">
-                    LinkedIn
-                </a>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__conteudo">
+                <p class="hero__saudacao">Ola, eu sou</p>
+                <h1 class="hero__titulo">Luiz Miguel</h1>
+                <h2 class="hero__subtitulo">Engenheiro de Software</h2>
+                <p class="hero__descricao">
+                    Desenvolvedor na <span class="destaque">Betha Sistemas</span>, estudante de Engenharia de Software na SATC.
+                    Apaixonado por tecnologia e desenvolvimento de software.
+                </p>
+                <p class="hero__localizacao">Criciuma, Santa Catarina - Brasil</p>
+                <div class="hero__botoes">
+                    <a href="#projetos" class="botao botao--primario">Ver Projetos</a>
+                    <a href="#contato" class="botao botao--secundario">Contato</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__terminal">
+                    <div class="terminal__header">
+                        <span class="terminal__dot terminal__dot--red"></span>
+                        <span class="terminal__dot terminal__dot--yellow"></span>
+                        <span class="terminal__dot terminal__dot--green"></span>
+                    </div>
+                    <div class="terminal__body">
+                        <p><span class="terminal__prompt">$</span> whoami</p>
+                        <p class="terminal__output">luiz.miguel</p>
+                        <p><span class="terminal__prompt">$</span> cat skills.txt</p>
+                        <p class="terminal__output">JavaScript, Java, C#, SQL...</p>
+                        <p><span class="terminal__prompt">$</span> echo $STATUS</p>
+                        <p class="terminal__output terminal__output--green">Disponivel para oportunidades</p>
+                        <p><span class="terminal__prompt">$</span> <span class="terminal__cursor">_</span></p>
+                    </div>
+                </div>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/Imagem.png" alt="Ilustração de desenvolvedor">
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="secao">
+            <div class="secao__container">
+                <h2 class="secao__titulo">Sobre Mim</h2>
+                <div class="sobre__grid">
+                    <div class="sobre__texto">
+                        <p>
+                            Meu nome e Luiz Miguel e sou estudante de Engenharia de Software com forte interesse em videogames,
+                            atualmente morando em Criciuma. Minha paixao por videogames me levou a escolher a engenharia de software
+                            como minha area de estudo.
+                        </p>
+                        <p>
+                            Meu nivel intermediario de ingles me permite comunicar-me efetivamente em um ambiente de trabalho internacional.
+                            Estou sempre buscando aprender mais sobre as ultimas tecnologias e interessado em trabalhar em um ambiente
+                            desafiador e inovador.
+                        </p>
+                    </div>
+                    <div class="sobre__cards">
+                        <div class="info-card">
+                            <span class="info-card__icone">🎓</span>
+                            <h3 class="info-card__titulo">Formacao</h3>
+                            <p class="info-card__texto">Engenharia de Software - SATC</p>
+                            <span class="info-card__periodo">2022 - Presente</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-card__icone">💼</span>
+                            <h3 class="info-card__titulo">Experiencia</h3>
+                            <p class="info-card__texto">Engenheiro de Software</p>
+                            <span class="info-card__periodo">Betha Sistemas</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-card__icone">🌍</span>
+                            <h3 class="info-card__titulo">Idiomas</h3>
+                            <p class="info-card__texto">Portugues (Nativo)</p>
+                            <span class="info-card__periodo">Ingles (Intermediario)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section id="habilidades" class="secao secao--alt">
+            <div class="secao__container">
+                <h2 class="secao__titulo">Habilidades</h2>
+                <div class="habilidades__grid">
+                    <div class="habilidade-grupo">
+                        <h3 class="habilidade-grupo__titulo">Linguagens</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="habilidade-grupo">
+                        <h3 class="habilidade-grupo__titulo">Front-end</h3>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="habilidade-grupo">
+                        <h3 class="habilidade-grupo__titulo">Ferramentas</h3>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                    </div>
+                    <div class="habilidade-grupo">
+                        <h3 class="habilidade-grupo__titulo">Metodologias</h3>
+                        <div class="tags">
+                            <span class="tag">Scrum</span>
+                            <span class="tag">Kanban</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="secao__subtitulo">Certificacoes</h3>
+                <div class="certificacoes__grid">
+                    <div class="certificacao">
+                        <span class="certificacao__badge">DIO</span>
+                        <span class="certificacao__nome">Introducao a Banco de Dados NoSQL</span>
+                    </div>
+                    <div class="certificacao">
+                        <span class="certificacao__badge">DIO</span>
+                        <span class="certificacao__nome">Introducao a Banco de Dados Relacionais (SQL)</span>
+                    </div>
+                    <div class="certificacao">
+                        <span class="certificacao__badge">DIO</span>
+                        <span class="certificacao__nome">Versionamento de Codigo com Git e GitHub</span>
+                    </div>
+                    <div class="certificacao">
+                        <span class="certificacao__badge">Alura</span>
+                        <span class="certificacao__nome">C#: Dominando Orientacao a Objetos</span>
+                    </div>
+                    <div class="certificacao">
+                        <span class="certificacao__badge">DIO</span>
+                        <span class="certificacao__nome">Primeiros Passos Com JavaScript</span>
+                    </div>
+                    <div class="certificacao">
+                        <span class="certificacao__badge">DIO</span>
+                        <span class="certificacao__nome">Arquitetura de Dados Essencial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos Section -->
+        <section id="projetos" class="secao">
+            <div class="secao__container">
+                <h2 class="secao__titulo">Projetos</h2>
+                <div class="projetos__grid">
+                    <article class="projeto-card">
+                        <div class="projeto-card__header">
+                            <span class="projeto-card__icone">&#60;/&#62;</span>
+                            <div class="projeto-card__links">
+                                <a href="https://github.com/Miguelito001/EncodeHub-2.0" target="_blank" rel="noopener noreferrer" class="projeto-card__link">GitHub</a>
+                            </div>
+                        </div>
+                        <h3 class="projeto-card__titulo">EncodeHub 2.0</h3>
+                        <p class="projeto-card__descricao">
+                            Plataforma web com ferramentas para desenvolvedores: conversao e formatacao de dados
+                            entre formatos como JSON, XML, YAML, Base64 e binario. Geracao de hashes criptograficos.
+                        </p>
+                        <div class="projeto-card__tags">
+                            <span class="projeto-card__tag">HTML5</span>
+                            <span class="projeto-card__tag">CSS3</span>
+                            <span class="projeto-card__tag">JavaScript</span>
+                            <span class="projeto-card__tag">Vercel</span>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-card__header">
+                            <span class="projeto-card__icone">&#60;/&#62;</span>
+                            <div class="projeto-card__links">
+                                <a href="https://github.com/Miguelito001/vite-market-list" target="_blank" rel="noopener noreferrer" class="projeto-card__link">GitHub</a>
+                            </div>
+                        </div>
+                        <h3 class="projeto-card__titulo">Vite Market List</h3>
+                        <p class="projeto-card__descricao">
+                            Aplicacao web para gerenciamento de lista de compras, desenvolvida com JavaScript e Vite
+                            para otimizacao de performance e experiencia de desenvolvimento.
+                        </p>
+                        <div class="projeto-card__tags">
+                            <span class="projeto-card__tag">JavaScript</span>
+                            <span class="projeto-card__tag">Vite</span>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-card__header">
+                            <span class="projeto-card__icone">&#60;/&#62;</span>
+                            <div class="projeto-card__links">
+                                <a href="https://github.com/Miguelito001" target="_blank" rel="noopener noreferrer" class="projeto-card__link">GitHub</a>
+                            </div>
+                        </div>
+                        <h3 class="projeto-card__titulo">Mais Projetos</h3>
+                        <p class="projeto-card__descricao">
+                            Confira outros projetos e contribuicoes no meu perfil do GitHub.
+                            Sempre trabalhando em algo novo e interessante.
+                        </p>
+                        <div class="projeto-card__tags">
+                            <span class="projeto-card__tag">Ver Todos</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="secao secao--alt">
+            <div class="secao__container secao__container--center">
+                <h2 class="secao__titulo">Vamos Conversar?</h2>
+                <p class="contato__texto">
+                    Estou sempre aberto a novas oportunidades e projetos interessantes.
+                    Entre em contato atraves das minhas redes sociais.
+                </p>
+                <div class="contato__links">
+                    <a href="https://github.com/Miguelito001" target="_blank" rel="noopener noreferrer" class="contato__link">
+                        <img src="./assets/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/miguelito001/" target="_blank" rel="noopener noreferrer" class="contato__link">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="rodape">
-        <p>Desenvolvido por Luiz Miguel - 2024</p>
+        <p>Desenvolvido por <span class="destaque">Luiz Miguel</span> - 2024</p>
     </footer>
 </body>
 </html>
